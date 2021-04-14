@@ -27,18 +27,6 @@
         </div>
                 <script src="stl_viewer.min.js"></script>        
         <script>
-            var stl_viewer=new StlViewer
-            (
-                document.getElementById("stl_cont"),
-                {
-                    models:
-                    [
-                        {filename:"HCDE533Cookiecutter.stl"}
-                    ]
-                }
-            );
-        </script>
-        <script>
             
             var stl_viewer=new StlViewer
             (
@@ -50,9 +38,6 @@
                     ]
                 }
             );
-            stl_viewer.set_position(2, 100, 100, 100);
-        </script>
-        <script>
             var stl_viewer=new StlViewer
             (
                 document.getElementById("stl_cont"),
@@ -63,7 +48,16 @@
                     ]
                 }
             );
-            stl_viewer.set_position(2, 100, 100, 100);
+             var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_cont"),
+                {
+                    models:
+                    [
+                        {filename:"HCDE533Cookiecutter.stl"}
+                    ]
+                }
+            );
         </script>
     </body>
 </html>
